@@ -1,8 +1,11 @@
 <p align="center">
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express-5-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-3-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/JWT-Auth-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/React_Router-v7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white" />
   <img src="https://img.shields.io/badge/Radix_UI-Components-6E56CF?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
 </p>
@@ -75,29 +78,42 @@ HostelHub streamlines every aspect of hostel operations — from complaint manag
 
 ```mermaid
 graph TB
-    subgraph Frontend["Frontend (React 19 + TypeScript)"]
-        RR["React Router v7 (SSR)"]
+    subgraph Frontend["Frontend - React 19 + TypeScript"]
+        RR["React Router v7 SSR"]
         UI["48 Radix UI Components"]
         CSS["CSS Modules + Design Tokens"]
         RC["Recharts Visualizations"]
     end
 
+    subgraph Backend["Backend - Express 5 + TypeScript"]
+        API["RESTful API"]
+        AUTH["JWT + bcrypt Auth"]
+        RBAC["Role-Based Access Control"]
+        DB[("SQLite Database")]
+    end
+
     subgraph Pages["34 Route Pages"]
-        PUB["Public: Landing, Pricing, Login, Splash"]
+        PUB["Public: Landing, Pricing, Login"]
         STU["Student: 20 Feature Modules"]
         WAR["Warden: 14 Management Modules"]
     end
 
-    subgraph Data["Data Layer"]
-        MOD["15+ TypeScript Data Models"]
-        STORE["localStorage Persistence"]
+    subgraph Infra["Infrastructure"]
+        DOCKER["Docker + docker-compose"]
+        NET["Bridge Network Isolation"]
+        VOL["Persistent Volumes"]
     end
 
     RR --> Pages
     UI --> Pages
-    CSS --> UI
-    Pages --> Data
+    Pages -->|HTTP + JWT| API
+    API --> AUTH
+    AUTH --> RBAC
+    RBAC --> DB
     RC --> WAR
+    DOCKER --> Frontend
+    DOCKER --> Backend
+    NET --> DOCKER
 ```
 
 ---
@@ -106,16 +122,19 @@ graph TB
 
 | Layer | Technology |
 |-------|-----------|
-| **Framework** | React 19 with React Router v7 |
-| **Language** | TypeScript 5.9 |
+| **Frontend** | React 19 with React Router v7 (SSR) |
+| **Backend** | Express 5 (Node.js) |
+| **Database** | SQLite via sql.js |
+| **Auth** | JWT + bcrypt password hashing |
+| **Language** | TypeScript 5.9 (full-stack) |
 | **Build Tool** | Vite 7 |
 | **UI Components** | Radix UI (48 components) |
 | **Styling** | CSS Modules + Custom Design Tokens |
 | **Charts** | Recharts |
-| **Forms** | React Hook Form + Zod validation |
+| **Validation** | Zod |
 | **Icons** | Lucide React |
-| **SSR** | React Router v7 Server-Side Rendering |
-| **Data** | TypeScript models with localStorage persistence |
+| **Containerization** | Docker + docker-compose |
+| **API** | RESTful with role-based access control |
 
 ---
 
