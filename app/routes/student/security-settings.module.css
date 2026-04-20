@@ -1,0 +1,261 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  margin-bottom: var(--space-8);
+}
+
+.greeting {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.headerIcon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent-9);
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Section */
+.section {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.sectionDescription {
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-10);
+  margin: 0 0 var(--space-6) 0;
+  line-height: 1.6;
+}
+
+/* Settings Row */
+.settingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-neutral-5);
+}
+
+.settingRow:last-child {
+  border-bottom: none;
+}
+
+.settingInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.settingLabel {
+  font-size: var(--font-size-2);
+  font-weight: 500;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.settingDescription {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.settingAction {
+  flex-shrink: 0;
+}
+
+/* Change Password Form */
+.passwordForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 400px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-neutral-10);
+  padding: var(--space-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s var(--ease);
+}
+
+.passwordToggle:hover {
+  color: var(--color-neutral-12);
+}
+
+.passwordToggleIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.strengthBar {
+  height: 4px;
+  background: var(--color-neutral-4);
+  border-radius: var(--radius-round);
+  overflow: hidden;
+  margin-top: var(--space-2);
+}
+
+.strengthFill {
+  height: 100%;
+  border-radius: var(--radius-round);
+  transition: width 0.3s var(--ease), background-color 0.3s var(--ease);
+}
+
+.strengthLabel {
+  font-size: var(--font-size-00);
+  font-weight: 600;
+  margin-top: var(--space-1);
+}
+
+/* Danger Zone */
+.dangerSection {
+  background: var(--color-error-2);
+  border: 1px solid var(--color-error-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.dangerTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-error-11);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.dangerDescription {
+  font-size: var(--font-size-1);
+  color: var(--color-error-11);
+  opacity: 0.8;
+  margin: 0 0 var(--space-6) 0;
+  line-height: 1.6;
+}
+
+.dangerActions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+/* Privacy Controls */
+.privacyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.privacyCard {
+  padding: var(--space-4);
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-5);
+  border-radius: var(--radius-3);
+}
+
+.privacyCardTitle {
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.privacyCardDescription {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+  margin: 0 0 var(--space-3) 0;
+  line-height: 1.5;
+}
+
+/* Success Banner */
+.successBanner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-success-3);
+  border: 1px solid var(--color-success-6);
+  border-radius: var(--radius-3);
+  margin-bottom: var(--space-5);
+  color: var(--color-success-11);
+  font-size: var(--font-size-1);
+  font-weight: 500;
+}
+
+.successIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .settingRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .settingAction {
+    width: 100%;
+  }
+
+  .privacyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dangerActions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,354 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.buttonIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: var(--space-2);
+}
+
+.amenitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.amenityCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-3);
+  transition: all 0.2s var(--ease);
+}
+
+.amenityCard:hover {
+  border-color: var(--color-accent-7);
+}
+
+.amenityUnavailable {
+  opacity: 0.6;
+}
+
+.amenityIcon {
+  width: 40px;
+  height: 40px;
+  background: var(--color-accent-3);
+  border-radius: var(--radius-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-9);
+}
+
+.amenityInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.amenityName {
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+.amenityCapacity {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+}
+
+.availabilityBadge {
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-00);
+  font-weight: 600;
+}
+
+.available {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.unavailable {
+  background: var(--color-error-3);
+  color: var(--color-error-11);
+}
+
+.formCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.formTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-weight: 500;
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+}
+
+.select {
+  height: 40px;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-neutral-7);
+  border-radius: var(--radius-2);
+  background: var(--color-neutral-1);
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--color-accent-8);
+  box-shadow: 0 0 0 3px var(--color-accent-4);
+}
+
+.timeSlotsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+}
+
+.timeSlotButton {
+  padding: var(--space-2);
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-5);
+  border-radius: var(--radius-2);
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+  font-size: var(--font-size-00);
+  color: var(--color-neutral-11);
+}
+
+.timeSlotButton:hover {
+  border-color: var(--color-accent-7);
+}
+
+.timeSlotActive {
+  border-color: var(--color-accent-9);
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+}
+
+.formActions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: flex-end;
+}
+
+.bookingsSection {
+  margin-top: var(--space-6);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.subsectionTitle {
+  font-size: var(--font-size-2);
+  font-weight: 500;
+  color: var(--color-neutral-11);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.upcomingSection {
+  margin-bottom: var(--space-6);
+}
+
+.bookingsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.bookingCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-3);
+}
+
+.bookingCardHistory {
+  opacity: 0.8;
+}
+
+.bookingIcon {
+  width: 48px;
+  height: 48px;
+  background: var(--color-accent-3);
+  border-radius: var(--radius-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bookingIconInner {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent-9);
+}
+
+.bookingInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.bookingAmenity {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.bookingDetails {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.bookingDetail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+}
+
+.detailIcon {
+  width: 14px;
+  height: 14px;
+  color: var(--color-accent-9);
+}
+
+.cancelButton {
+  color: var(--color-error-9);
+}
+
+.cancelIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: var(--space-1);
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.statusIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.statusCompleted {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.statusCancelled {
+  background: var(--color-error-3);
+  color: var(--color-error-11);
+}
+
+.statusBooked {
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+}
+
+.noHistory {
+  color: var(--color-neutral-10);
+  font-size: var(--font-size-1);
+  margin: 0;
+  padding: var(--space-4);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .timeSlotsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bookingCard {
+    flex-wrap: wrap;
+  }
+
+  .bookingDetails {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+}

@@ -1,0 +1,47 @@
+import { type RouteConfig, route, index } from "@react-router/dev/routes";
+
+export default [
+  index("routes/home.tsx"),
+  route("pricing", "routes/pricing.tsx"),
+  route("product", "routes/product.tsx"),
+  route("splash", "routes/splash.tsx"),
+  route("login", "routes/login.tsx"),
+
+  // Student routes
+  route("student/dashboard", "routes/student/dashboard.tsx"),
+  route("student/profile", "routes/student/profile.tsx"),
+  route("student/complaints", "routes/student/complaints.tsx"),
+  route("student/notices", "routes/student/notices.tsx"),
+  route("student/fees", "routes/student/fees.tsx"),
+  route("student/rules", "routes/student/rules.tsx"),
+  route("student/emergency", "routes/student/emergency.tsx"),
+  route("student/meals", "routes/student/meals.tsx"),
+  route("student/room-change", "routes/student/room-change.tsx"),
+  route("student/leave", "routes/student/leave.tsx"),
+  route("student/visitors", "routes/student/visitors.tsx"),
+  route("student/laundry", "routes/student/laundry.tsx"),
+  route("student/events", "routes/student/events.tsx"),
+  route("student/residents", "routes/student/residents.tsx"),
+  route("student/feedback", "routes/student/feedback.tsx"),
+  route("student/lost-found", "routes/student/lost-found.tsx"),
+  route("student/amenities", "routes/student/amenities.tsx"),
+  route("student/documents", "routes/student/documents.tsx"),
+  route("student/security", "routes/student/security.tsx"),
+  route("student/security-settings", "routes/student/security-settings.tsx"),
+
+  // Warden routes
+  route("warden/dashboard", "routes/warden/dashboard.tsx"),
+  route("warden/students", "routes/warden/students.tsx"),
+  route("warden/leave-approvals", "routes/warden/leave-approvals.tsx"),
+  route("warden/visitor-approvals", "routes/warden/visitor-approvals.tsx"),
+  route("warden/rooms", "routes/warden/rooms.tsx"),
+  route("warden/complaints", "routes/warden/complaints.tsx"),
+  route("warden/notices", "routes/warden/notices.tsx"),
+  route("warden/fees", "routes/warden/fees.tsx"),
+  route("warden/attendance", "routes/warden/attendance.tsx"),
+  route("warden/events", "routes/warden/events.tsx"),
+  route("warden/reports", "routes/warden/reports.tsx"),
+  route("warden/lost-found", "routes/warden/lost-found.tsx"),
+  route("warden/staff", "routes/warden/staff.tsx"),
+  route("warden/audit-log", "routes/warden/audit-log.tsx"),
+] satisfies RouteConfig;

@@ -1,0 +1,380 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.buttonIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: var(--space-2);
+}
+
+.currentRoomCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.currentRoomInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.roomIcon {
+  width: 40px;
+  height: 40px;
+  color: var(--color-accent-9);
+  padding: var(--space-2);
+  background: var(--color-accent-3);
+  border-radius: var(--radius-3);
+}
+
+.currentRoomLabel {
+  display: block;
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+  margin-bottom: var(--space-1);
+}
+
+.currentRoomValue {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+}
+
+.formCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.formTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.roomTransfer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  justify-content: center;
+}
+
+.roomBox {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+  padding: var(--space-4);
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-5);
+  border-radius: var(--radius-3);
+}
+
+.roomBoxLabel {
+  display: block;
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+  margin-bottom: var(--space-2);
+}
+
+.roomBoxValue {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+}
+
+.roomInput {
+  text-align: center;
+  font-weight: 600;
+}
+
+.arrowIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent-9);
+  flex-shrink: 0;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-weight: 500;
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+}
+
+.infoBox {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-accent-2);
+  border: 1px solid var(--color-accent-6);
+  border-radius: var(--radius-3);
+}
+
+.infoIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-9);
+  flex-shrink: 0;
+}
+
+.infoText {
+  margin: 0;
+  color: var(--color-accent-11);
+  font-size: var(--font-size-1);
+}
+
+.formActions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: flex-end;
+}
+
+.pendingNotice {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--color-warning-2);
+  border: 1px solid var(--color-warning-6);
+  border-radius: var(--radius-4);
+  margin-bottom: var(--space-6);
+}
+
+.pendingIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-warning-9);
+  flex-shrink: 0;
+}
+
+.pendingTitle {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-warning-11);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.pendingText {
+  margin: 0;
+  color: var(--color-warning-11);
+  font-size: var(--font-size-1);
+}
+
+.requestsSection {
+  margin-top: var(--space-6);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.requestsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.requestCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-5);
+}
+
+.requestHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.requestId {
+  font-weight: 600;
+  color: var(--color-neutral-12);
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.statusPending {
+  background: var(--color-warning-3);
+  color: var(--color-warning-11);
+}
+
+.statusApproved {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.statusRejected {
+  background: var(--color-error-3);
+  color: var(--color-error-11);
+}
+
+.statusIconPending,
+.statusIconApproved,
+.statusIconRejected {
+  width: 14px;
+  height: 14px;
+}
+
+.statusIconPending {
+  color: var(--color-warning-11);
+}
+
+.statusIconApproved {
+  color: var(--color-success-11);
+}
+
+.statusIconRejected {
+  color: var(--color-error-11);
+}
+
+.requestRooms {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-neutral-1);
+  border-radius: var(--radius-3);
+}
+
+.requestRoom {
+  flex: 1;
+}
+
+.requestRoomLabel {
+  display: block;
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+}
+
+.requestRoomValue {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+}
+
+.requestArrow {
+  width: 20px;
+  height: 20px;
+  color: var(--color-neutral-8);
+}
+
+.requestReason {
+  color: var(--color-neutral-11);
+  font-size: var(--font-size-1);
+  margin: 0 0 var(--space-3) 0;
+  line-height: var(--font-lineheight-3);
+}
+
+.requestMeta {
+  display: flex;
+  gap: var(--space-4);
+  color: var(--color-neutral-10);
+  font-size: var(--font-size-0);
+}
+
+.requestRemarks {
+  margin-top: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-neutral-3);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-8);
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+}
+
+.emptyIcon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-neutral-8);
+  margin-bottom: var(--space-4);
+}
+
+.emptyText {
+  margin: 0;
+  color: var(--color-neutral-11);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .roomTransfer {
+    flex-direction: column;
+  }
+
+  .roomBox {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .arrowIcon {
+    transform: rotate(90deg);
+  }
+}

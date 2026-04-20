@@ -1,0 +1,295 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.timingsCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.timingsTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.timingsIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-9);
+}
+
+.timingsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.timingItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-5);
+  border-radius: var(--radius-3);
+}
+
+.mealIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent-9);
+}
+
+.mealName {
+  display: block;
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+}
+
+.mealTime {
+  display: block;
+  color: var(--color-neutral-11);
+  font-size: var(--font-size-0);
+}
+
+.menuSection {
+  margin-bottom: var(--space-6);
+}
+
+.daySelector {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+}
+
+.dayButton {
+  position: relative;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-neutral-6);
+  background: var(--color-neutral-2);
+  border-radius: var(--radius-3);
+  font-weight: 500;
+  color: var(--color-neutral-11);
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+  min-width: 70px;
+}
+
+.dayButton:hover {
+  background: var(--color-neutral-3);
+  border-color: var(--color-accent-7);
+}
+
+.dayButtonActive {
+  background: var(--color-accent-9);
+  color: var(--color-accent-contrast);
+  border-color: var(--color-accent-9);
+}
+
+.dayButtonActive:hover {
+  background: var(--color-accent-10);
+}
+
+.dayButtonToday {
+  border-color: var(--color-accent-7);
+}
+
+.todayDot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  background: var(--color-success-9);
+  border-radius: 50%;
+}
+
+.dayButtonActive .todayDot {
+  background: var(--color-accent-contrast);
+}
+
+.menuCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+}
+
+.menuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-neutral-6);
+}
+
+.menuTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-4);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+.menuTitleIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent-9);
+}
+
+.todayBadge {
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+  font-weight: 600;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.menuItem {
+  padding: var(--space-5);
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-5);
+  border-radius: var(--radius-3);
+  transition: all 0.2s var(--ease);
+}
+
+.menuItem:hover {
+  border-color: var(--color-accent-6);
+  box-shadow: var(--shadow-1);
+}
+
+.menuItemHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.menuItemIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-9);
+}
+
+.menuItemTitle {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0;
+  flex: 1;
+}
+
+.menuItemTime {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+}
+
+.menuItemContent {
+  color: var(--color-neutral-11);
+  font-size: var(--font-size-1);
+  line-height: var(--font-lineheight-3);
+  margin: 0;
+}
+
+.infoCard {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--color-accent-2);
+  border: 1px solid var(--color-accent-6);
+  border-radius: var(--radius-4);
+}
+
+.infoIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent-9);
+  flex-shrink: 0;
+  margin-top: var(--space-1);
+}
+
+.infoTitle {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-accent-11);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.infoList {
+  margin: 0;
+  padding-left: var(--space-5);
+  color: var(--color-accent-11);
+  font-size: var(--font-size-1);
+}
+
+.infoList li {
+  margin-bottom: var(--space-1);
+}
+
+.infoList li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .timingsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .timingsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .menuGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .infoCard {
+    flex-direction: column;
+  }
+}

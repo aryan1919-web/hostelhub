@@ -1,0 +1,342 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.buttonIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: var(--space-2);
+}
+
+.alertCard {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--color-success-2);
+  border: 1px solid var(--color-success-6);
+  border-radius: var(--radius-4);
+  margin-bottom: var(--space-6);
+}
+
+.alertIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-success-9);
+  flex-shrink: 0;
+}
+
+.alertTitle {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-success-11);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.alertText {
+  margin: 0;
+  color: var(--color-success-11);
+  font-size: var(--font-size-1);
+}
+
+.formCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.formTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.itemsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itemsLabel {
+  font-weight: 500;
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+}
+
+.smallIcon {
+  width: 14px;
+  height: 14px;
+  margin-right: var(--space-1);
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.itemRow {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.select {
+  flex: 1;
+  height: 40px;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-neutral-7);
+  border-radius: var(--radius-2);
+  background: var(--color-neutral-1);
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--color-accent-8);
+  box-shadow: 0 0 0 3px var(--color-accent-4);
+}
+
+.quantityInput {
+  width: 80px;
+}
+
+.removeButton {
+  color: var(--color-error-9);
+}
+
+.formNote {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  background: var(--color-accent-2);
+  border-radius: var(--radius-3);
+  color: var(--color-accent-11);
+  font-size: var(--font-size-1);
+}
+
+.noteIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.formActions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: flex-end;
+}
+
+.laundrySection {
+  margin-top: var(--space-6);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.laundryList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.laundryCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-5);
+}
+
+.laundryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.laundryId {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+}
+
+.laundryIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-9);
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+  font-weight: 600;
+}
+
+.statusIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.statusSubmitted {
+  background: var(--color-neutral-4);
+  color: var(--color-neutral-11);
+}
+
+.statusWashing {
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+}
+
+.statusDrying {
+  background: var(--color-warning-3);
+  color: var(--color-warning-11);
+}
+
+.statusReady {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.statusCollected {
+  background: var(--color-neutral-4);
+  color: var(--color-neutral-11);
+}
+
+.laundryItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.itemTag {
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-neutral-3);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-11);
+}
+
+.laundryMeta {
+  display: flex;
+  gap: var(--space-6);
+  padding: var(--space-3);
+  background: var(--color-neutral-1);
+  border-radius: var(--radius-3);
+}
+
+.metaItem {
+  display: flex;
+  gap: var(--space-2);
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+}
+
+.metaLabel {
+  color: var(--color-neutral-10);
+}
+
+.pickupNote {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  padding: var(--space-3);
+  background: var(--color-success-2);
+  border-radius: var(--radius-3);
+  color: var(--color-success-11);
+  font-size: var(--font-size-1);
+  font-weight: 500;
+}
+
+.pickupIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-8);
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+}
+
+.emptyIcon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-neutral-8);
+  margin-bottom: var(--space-4);
+}
+
+.emptyText {
+  margin: 0;
+  color: var(--color-neutral-11);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .itemRow {
+    flex-wrap: wrap;
+  }
+
+  .select {
+    flex: none;
+    width: 100%;
+  }
+
+  .laundryMeta {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+}

@@ -1,0 +1,327 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.buttonIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: var(--space-2);
+}
+
+.formCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.formTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-weight: 500;
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+}
+
+.categoryButton {
+  padding: var(--space-3);
+  background: var(--color-neutral-1);
+  border: 2px solid var(--color-neutral-5);
+  border-radius: var(--radius-3);
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+}
+
+.categoryButton:hover {
+  border-color: var(--color-accent-7);
+}
+
+.categoryButtonActive {
+  border-color: var(--color-accent-9);
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+}
+
+.starsContainer {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.star {
+  padding: var(--space-1);
+  background: transparent;
+  border: none;
+  cursor: default;
+}
+
+.starInteractive {
+  cursor: pointer;
+}
+
+.starInteractive:hover {
+  transform: scale(1.1);
+}
+
+.starIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-neutral-6);
+  fill: var(--color-neutral-6);
+  transition: all 0.2s var(--ease);
+}
+
+.starFilled .starIcon {
+  color: var(--amber-9);
+  fill: var(--amber-9);
+}
+
+.anonymousToggle {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.toggleButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-neutral-1);
+  border: 2px solid var(--color-neutral-5);
+  border-radius: var(--radius-3);
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+  width: fit-content;
+}
+
+.toggleButton:hover {
+  border-color: var(--color-accent-7);
+}
+
+.toggleButtonActive {
+  border-color: var(--color-accent-9);
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+}
+
+.toggleIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.toggleHint {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+}
+
+.formActions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: flex-end;
+}
+
+.feedbackSection {
+  margin-top: var(--space-6);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.feedbackList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.feedbackCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-5);
+}
+
+.feedbackHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.feedbackMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.categoryTag {
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+  font-weight: 600;
+}
+
+.anonymousBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-neutral-4);
+  color: var(--color-neutral-11);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+}
+
+.anonymousIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+  font-weight: 600;
+}
+
+.statusIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.statusSubmitted {
+  background: var(--color-neutral-4);
+  color: var(--color-neutral-11);
+}
+
+.statusReviewed {
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+}
+
+.statusAddressed {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.feedbackTitle {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.feedbackDescription {
+  color: var(--color-neutral-11);
+  font-size: var(--font-size-1);
+  line-height: var(--font-lineheight-3);
+  margin: var(--space-3) 0;
+}
+
+.feedbackDate {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+}
+
+.responseBox {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-success-2);
+  border: 1px solid var(--color-success-6);
+  border-radius: var(--radius-3);
+  font-size: var(--font-size-1);
+  color: var(--color-success-11);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-8);
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+}
+
+.emptyIcon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-neutral-8);
+  margin-bottom: var(--space-4);
+}
+
+.emptyText {
+  margin: 0;
+  color: var(--color-neutral-11);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .categoryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

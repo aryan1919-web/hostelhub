@@ -1,0 +1,132 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.noticesList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.noticeCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  transition: all 0.3s var(--ease);
+}
+
+.noticeCard:hover {
+  box-shadow: var(--shadow-2);
+  border-color: var(--color-accent-7);
+}
+
+.pinnedCard {
+  border-color: var(--color-accent-7);
+  background: var(--color-accent-2);
+}
+
+.noticeHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  gap: var(--space-4);
+}
+
+.noticeTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0;
+  flex: 1;
+}
+
+.badges {
+  display: flex;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.badge {
+  font-size: var(--font-size-00);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-2);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--font-letterspacing-1);
+}
+
+.badgePinned {
+  background: var(--color-accent-9);
+  color: var(--color-accent-contrast);
+}
+
+.badgeUrgent {
+  background: var(--color-error-3);
+  color: var(--color-error-11);
+}
+
+.badgeFee {
+  background: var(--color-warning-3);
+  color: var(--color-warning-11);
+}
+
+.badgeEvent {
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+}
+
+.badgeGeneral {
+  background: var(--color-neutral-4);
+  color: var(--color-neutral-11);
+}
+
+.noticeContent {
+  color: var(--color-neutral-11);
+  line-height: var(--font-lineheight-3);
+  margin: 0 0 var(--space-4) 0;
+  font-size: var(--font-size-2);
+}
+
+.noticeMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-neutral-10);
+  font-size: var(--font-size-1);
+}
+
+.metaIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}

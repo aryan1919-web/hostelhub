@@ -1,0 +1,453 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-6);
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.title {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.formCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.formTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.formRow {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.formGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-size: var(--font-size-1);
+  font-weight: 500;
+  color: var(--color-neutral-12);
+}
+
+.select {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-2);
+  background: var(--color-neutral-1);
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--color-accent-7);
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+  cursor: pointer;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-neutral-5);
+}
+
+.statsRow {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-3);
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+  flex: 1;
+  min-width: 180px;
+}
+
+.statCard.registration {
+  background: var(--purple-3);
+  color: var(--purple-11);
+}
+
+.statCard div {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: var(--font-size-4);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: var(--font-size-0);
+  opacity: 0.9;
+}
+
+.section {
+  margin-bottom: var(--space-8);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--space-5);
+}
+
+.eventCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-5);
+  transition: all 0.2s var(--ease);
+}
+
+.eventCard:hover {
+  border-color: var(--color-accent-7);
+  box-shadow: var(--shadow-2);
+}
+
+.eventHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-4);
+}
+
+.categoryIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categoryIcon.cultural {
+  background: var(--pink-3);
+  color: var(--pink-11);
+}
+
+.categoryIcon.sports {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.categoryIcon.academic {
+  background: var(--blue-3);
+  color: var(--blue-11);
+}
+
+.categoryIcon.festival {
+  background: var(--orange-3);
+  color: var(--orange-11);
+}
+
+.categoryIcon.meeting {
+  background: var(--purple-3);
+  color: var(--purple-11);
+}
+
+.eventActions {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.iconBtn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: var(--color-neutral-10);
+  border-radius: var(--radius-2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s var(--ease);
+}
+
+.iconBtn:hover {
+  background: var(--color-neutral-4);
+  color: var(--color-neutral-12);
+}
+
+.eventTitle {
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+  font-size: var(--font-size-2);
+}
+
+.categoryBadge {
+  display: inline-block;
+  font-size: var(--font-size-00);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-2);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+}
+
+.categoryBadge.cultural {
+  background: var(--pink-3);
+  color: var(--pink-11);
+}
+
+.categoryBadge.sports {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.categoryBadge.academic {
+  background: var(--blue-3);
+  color: var(--blue-11);
+}
+
+.categoryBadge.festival {
+  background: var(--orange-3);
+  color: var(--orange-11);
+}
+
+.categoryBadge.meeting {
+  background: var(--purple-3);
+  color: var(--purple-11);
+}
+
+.eventDescription {
+  color: var(--color-neutral-11);
+  font-size: var(--font-size-1);
+  line-height: var(--font-lineheight-3);
+  margin: 0 0 var(--space-4) 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.eventDetails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-neutral-5);
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+}
+
+.detailItem svg {
+  color: var(--color-neutral-9);
+}
+
+.registrationInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-0);
+  color: var(--color-accent-11);
+  background: var(--color-accent-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-2);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.deadline {
+  margin-left: auto;
+  color: var(--color-neutral-10);
+}
+
+.cardActions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.cardActions button {
+  flex: 1;
+}
+
+.pastEventsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.pastEventItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-3);
+}
+
+.categoryIconSmall {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.categoryIconSmall.cultural {
+  background: var(--pink-3);
+  color: var(--pink-11);
+}
+
+.categoryIconSmall.sports {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.categoryIconSmall.academic {
+  background: var(--blue-3);
+  color: var(--blue-11);
+}
+
+.categoryIconSmall.festival {
+  background: var(--orange-3);
+  color: var(--orange-11);
+}
+
+.categoryIconSmall.meeting {
+  background: var(--purple-3);
+  color: var(--purple-11);
+}
+
+.pastEventInfo {
+  flex: 1;
+}
+
+.pastEventTitle {
+  font-weight: 500;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-1) 0;
+  font-size: var(--font-size-1);
+}
+
+.pastEventDate {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-9);
+  color: var(--color-neutral-10);
+}
+
+.emptyState svg {
+  margin-bottom: var(--space-4);
+  opacity: 0.5;
+}
+
+.emptyState h3 {
+  margin: 0 0 var(--space-2) 0;
+  color: var(--color-neutral-11);
+}
+
+.emptyState p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .formRow {
+    flex-direction: column;
+  }
+
+  .statsRow {
+    flex-direction: column;
+  }
+
+  .eventsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardActions {
+    flex-direction: column;
+  }
+}

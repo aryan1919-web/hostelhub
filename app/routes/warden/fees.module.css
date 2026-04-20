@@ -1,0 +1,300 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-6);
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.headerActions button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  border-radius: var(--radius-4);
+  background: var(--color-neutral-3);
+  color: var(--color-neutral-11);
+}
+
+.statCard.collected {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.statCard.pending {
+  background: var(--amber-3);
+  color: var(--amber-11);
+}
+
+.statCard.overdue {
+  background: var(--color-error-3);
+  color: var(--color-error-11);
+}
+
+.statCard div {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: var(--font-size-4);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: var(--font-size-0);
+  opacity: 0.9;
+}
+
+.collectionProgress {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+  margin-bottom: var(--space-3);
+}
+
+.progressBar {
+  height: 12px;
+  background: var(--color-neutral-4);
+  border-radius: var(--radius-round);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-success-9);
+  border-radius: var(--radius-round);
+  transition: width 0.5s var(--ease);
+}
+
+.filters {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.searchBox {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-neutral-9);
+}
+
+.searchInput {
+  padding-left: var(--space-9) !important;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-neutral-11);
+}
+
+.select {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-2);
+  background: var(--color-neutral-2);
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--color-accent-7);
+}
+
+.tableContainer {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-1);
+}
+
+.table th {
+  background: var(--color-neutral-3);
+  padding: var(--space-4);
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-neutral-11);
+  border-bottom: 1px solid var(--color-neutral-6);
+}
+
+.table td {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-neutral-5);
+  color: var(--color-neutral-11);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:hover td {
+  background: var(--color-neutral-3);
+}
+
+.studentCell {
+  display: flex;
+  flex-direction: column;
+}
+
+.studentName {
+  font-weight: 500;
+  color: var(--color-neutral-12);
+}
+
+.studentId {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+}
+
+.amount {
+  font-weight: 600;
+  color: var(--color-neutral-12);
+}
+
+.statusBadge {
+  font-size: var(--font-size-00);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-2);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.statusBadge.paid {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.statusBadge.pending {
+  background: var(--amber-3);
+  color: var(--amber-11);
+}
+
+.statusBadge.overdue {
+  background: var(--color-error-3);
+  color: var(--color-error-11);
+}
+
+.tableActions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-9);
+  color: var(--color-neutral-10);
+}
+
+.emptyState svg {
+  margin-bottom: var(--space-4);
+  opacity: 0.5;
+}
+
+.emptyState h3 {
+  margin: 0 0 var(--space-2) 0;
+  color: var(--color-neutral-11);
+}
+
+.emptyState p {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .tableContainer {
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .headerActions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .searchBox {
+    min-width: 100%;
+  }
+}

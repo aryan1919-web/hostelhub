@@ -1,0 +1,311 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.searchSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.searchBox {
+  position: relative;
+  max-width: 500px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--color-neutral-10);
+}
+
+.searchInput {
+  padding-left: var(--space-9);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.filterIcon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-neutral-10);
+}
+
+.filterButton {
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+
+.filterButton:hover {
+  background: var(--color-neutral-3);
+  border-color: var(--color-neutral-7);
+}
+
+.filterButtonActive {
+  background: var(--color-accent-9);
+  color: var(--color-accent-contrast);
+  border-color: var(--color-accent-9);
+}
+
+.statsBar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+  padding: var(--space-3);
+  background: var(--color-neutral-2);
+  border-radius: var(--radius-3);
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-neutral-11);
+  font-size: var(--font-size-1);
+}
+
+.statIcon {
+  width: 16px;
+  height: 16px;
+  color: var(--color-accent-9);
+}
+
+.residentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+.residentCard {
+  position: relative;
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-5);
+  text-align: center;
+  transition: all 0.2s var(--ease);
+}
+
+.residentCard:hover {
+  border-color: var(--color-accent-7);
+  box-shadow: var(--shadow-2);
+}
+
+.currentUserCard {
+  border-color: var(--color-accent-7);
+  background: var(--color-accent-2);
+}
+
+.youBadge {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-accent-9);
+  color: var(--color-accent-contrast);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-00);
+  font-weight: 600;
+}
+
+.residentAvatar {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-4);
+  background: var(--color-accent-9);
+  color: var(--color-accent-contrast);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-3);
+  font-weight: 600;
+}
+
+.residentName {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.residentInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-neutral-11);
+  font-size: var(--font-size-1);
+}
+
+.infoIcon {
+  width: 14px;
+  height: 14px;
+  color: var(--color-accent-9);
+}
+
+.yearBadge {
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-neutral-4);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-11);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-neutral-5);
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  color: var(--color-accent-11);
+  font-size: var(--font-size-1);
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+
+.contactLink:hover {
+  color: var(--color-accent-9);
+}
+
+.contactIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.emailText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.noContact {
+  color: var(--color-neutral-10);
+  font-size: var(--font-size-0);
+}
+
+.privateProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-neutral-5);
+  color: var(--color-neutral-10);
+  font-size: var(--font-size-1);
+}
+
+.lockIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-8);
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+}
+
+.emptyIcon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-neutral-8);
+  margin-bottom: var(--space-4);
+}
+
+.emptyText {
+  margin: 0;
+  color: var(--color-neutral-11);
+}
+
+.privacyNote {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  padding: var(--space-4);
+  background: var(--color-neutral-3);
+  border-radius: var(--radius-3);
+}
+
+.noteIcon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-neutral-10);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.privacyNote p {
+  margin: 0;
+  color: var(--color-neutral-11);
+  font-size: var(--font-size-1);
+}
+
+.noteLink {
+  color: var(--color-accent-11);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .residentsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,488 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-1);
+}
+
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.header {
+  margin-bottom: var(--space-8);
+}
+
+.headerTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.greeting {
+  font-size: var(--font-size-5);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.headerIcon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent-9);
+}
+
+.subtitle {
+  color: var(--color-neutral-11);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Security Score */
+.scoreSection {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.scoreCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-7);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreCircle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: var(--space-4);
+  position: relative;
+}
+
+.scoreCircleRing {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 8px solid var(--color-neutral-4);
+}
+
+.scoreCircleProgress {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  border-top-color: var(--color-success-9);
+  border-right-color: var(--color-success-9);
+  border-bottom-color: var(--color-success-9);
+  transform: rotate(-45deg);
+}
+
+.scoreValue {
+  font-size: var(--font-size-7);
+  font-weight: 700;
+  color: var(--color-neutral-12);
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.scoreMax {
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-10);
+  position: relative;
+  z-index: 1;
+}
+
+.scoreLabel {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-success-11);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.scoreUpdate {
+  font-size: var(--font-size-00);
+  color: var(--color-neutral-10);
+  margin: 0;
+}
+
+.scoreBreakdown {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+}
+
+.scoreBreakdownTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.scoreCategories {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.scoreCategory {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.scoreCategoryName {
+  width: 140px;
+  font-size: var(--font-size-1);
+  font-weight: 500;
+  color: var(--color-neutral-12);
+  flex-shrink: 0;
+}
+
+.scoreCategoryBar {
+  flex: 1;
+  height: 8px;
+  background: var(--color-neutral-4);
+  border-radius: var(--radius-round);
+  overflow: hidden;
+}
+
+.scoreCategoryFill {
+  height: 100%;
+  border-radius: var(--radius-round);
+  transition: width 0.5s var(--ease);
+}
+
+.scoreCategoryValue {
+  width: 40px;
+  text-align: right;
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+}
+
+/* Status Cards */
+.statusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+.statusCard {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.statusIconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.statusIconBox[data-color="success"] {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.statusIconBox[data-color="accent"] {
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+}
+
+.statusIconBox[data-color="warning"] {
+  background: var(--color-warning-3);
+  color: var(--color-warning-11);
+}
+
+.statusIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.statusInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.statusLabel {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.statusValue {
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+/* Section */
+.section {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+  gap: var(--space-4);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+/* Login Activity */
+.activityList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.activityItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-5);
+  border-radius: var(--radius-3);
+  transition: all 0.2s var(--ease);
+}
+
+.activityItem:hover {
+  border-color: var(--color-accent-7);
+}
+
+.activityItem[data-status="failed"],
+.activityItem[data-status="blocked"] {
+  border-left: 3px solid var(--color-error-9);
+}
+
+.activityItem[data-status="success"] {
+  border-left: 3px solid var(--color-success-9);
+}
+
+.activityStatusDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.activityStatusDot[data-status="success"] {
+  background: var(--color-success-9);
+}
+
+.activityStatusDot[data-status="failed"] {
+  background: var(--color-error-9);
+}
+
+.activityStatusDot[data-status="blocked"] {
+  background: var(--color-error-9);
+}
+
+.activityInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.activityDevice {
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.activityDetails {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+  margin: 0;
+}
+
+.activityMeta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.activityTime {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-11);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.activityBadge {
+  font-size: var(--font-size-00);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-2);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.activityBadge[data-status="success"] {
+  background: var(--color-success-3);
+  color: var(--color-success-11);
+}
+
+.activityBadge[data-status="failed"] {
+  background: var(--color-error-3);
+  color: var(--color-error-11);
+}
+
+.activityBadge[data-status="blocked"] {
+  background: var(--color-error-3);
+  color: var(--color-error-11);
+}
+
+/* Sessions */
+.sessionsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.sessionItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-5);
+  border-radius: var(--radius-3);
+}
+
+.sessionItem[data-current="true"] {
+  border-color: var(--color-accent-7);
+  background: var(--color-accent-2);
+}
+
+.sessionIconBox {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-neutral-3);
+  color: var(--color-neutral-11);
+  flex-shrink: 0;
+}
+
+.sessionInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.sessionDevice {
+  font-size: var(--font-size-1);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-1) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.currentBadge {
+  font-size: var(--font-size-00);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-2);
+  background: var(--color-accent-3);
+  color: var(--color-accent-11);
+  font-weight: 600;
+}
+
+.sessionDetails {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+  margin: 0;
+}
+
+.sessionActions {
+  flex-shrink: 0;
+}
+
+/* Two Column */
+.twoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+@media (max-width: 1024px) {
+  .scoreSection {
+    grid-template-columns: 1fr;
+  }
+
+  .twoColumn {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .statusGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .headerTop {
+    flex-direction: column;
+  }
+
+  .activityItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .activityMeta {
+    text-align: left;
+  }
+
+  .sessionItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sessionActions {
+    width: 100%;
+  }
+}
