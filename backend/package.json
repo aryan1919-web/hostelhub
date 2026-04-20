@@ -1,0 +1,27 @@
+{
+  "name": "hostelhub-backend",
+  "version": "1.0.0",
+  "description": "HostelHub Backend API — Express + SQLite + JWT",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch server.ts",
+    "start": "tsx server.ts",
+    "seed": "tsx db/seed.ts"
+  },
+  "dependencies": {
+    "sql.js": "^1.12.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^3.0.2",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/bcryptjs": "^2.4.6",
+    "tsx": "^4.19.4",
+    "typescript": "~5.9.3"
+  }
+}

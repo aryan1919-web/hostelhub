@@ -3,6 +3,11 @@ node_modules/
 /.pnp
 .pnp.js
 
+# Backend
+backend/node_modules/
+backend/dist/
+backend/db/*.db
+
 # Build outputs
 /build/
 /dist/

@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  # React Frontend (SSR)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - API_URL=http://backend:3001
+    depends_on:
+      - backend
+    networks:
+      - hostelhub-network
+    restart: unless-stopped
+
+  # Express + SQLite Backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - JWT_SECRET=hostelhub-jwt-secret-production-key
+      - FRONTEND_URL=http://localhost:3000
+    volumes:
+      - backend-data:/app/db
+    networks:
+      - hostelhub-network
+    restart: unless-stopped
+
+networks:
+  hostelhub-network:
+    driver: bridge
+
+volumes:
+  backend-data:
+    driver: local
