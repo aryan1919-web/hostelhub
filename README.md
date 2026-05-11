@@ -7,7 +7,7 @@ sdk: docker
 app_port: 7860
 pinned: false
 license: mit
-short_description: Comprehensive Hostel Management System with Role-Based Dashboards
+short_description: Hostel Management with Student & Warden Dashboards
 ---
 
 <p align="center">
