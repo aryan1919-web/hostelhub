@@ -1,3 +1,15 @@
+---
+title: HostelHub
+emoji: 🏠
+colorFrom: blue
+colorTo: purple
+sdk: docker
+app_port: 7860
+pinned: false
+license: mit
+short_description: Comprehensive Hostel Management System with Role-Based Dashboards
+---
+
 <p align="center">
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
@@ -15,6 +27,15 @@
 > A comprehensive, full-featured hostel management platform with role-based dashboards for **Students** and **Wardens**, built with modern web technologies.
 
 HostelHub streamlines every aspect of hostel operations — from complaint management and fee tracking to leave approvals, visitor management, meal schedules, and real-time analytics — all in one intuitive interface.
+
+<p align="center">
+  <a href="https://aryan1211-hostelhub.hf.space">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Try_It_Now-FF6B6B?style=for-the-badge" />
+  </a>
+  <a href="https://huggingface.co/spaces/aryan1211/hostelhub">
+    <img src="https://img.shields.io/badge/🤗_Hugging_Face-Spaces-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+  </a>
+</p>
 
 ---
 

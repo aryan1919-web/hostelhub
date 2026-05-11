@@ -1,13 +1,11 @@
-# Frontend Dockerfile
+# Build stage
 FROM node:20-alpine AS build
 
 WORKDIR /app
 
-# Install dependencies
 COPY package.json package-lock.json ./
 RUN npm ci
 
-# Copy source and build
 COPY . .
 RUN npm run build
 
@@ -20,6 +18,8 @@ COPY --from=build /app/build ./build
 COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/package.json ./
 
-EXPOSE 3000
+# HF Spaces expects port 7860
+ENV PORT=7860
+EXPOSE 7860
 
-CMD ["npm", "start"]
+CMD ["npx", "react-router-serve", "./build/server/index.js", "--port", "7860"]
