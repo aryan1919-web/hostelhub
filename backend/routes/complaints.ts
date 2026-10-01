@@ -1,4 +1,5 @@
-import { Router, Response } from "express";
+import { Router } from "express";
+import type { Response } from "express";
 import { getDb, saveDb } from "../db/setup.js";
 import { authenticate, authorize, type AuthRequest } from "../middleware/auth.js";
 
@@ -50,7 +51,7 @@ router.post("/", authenticate, authorize("student"), async (req: AuthRequest, re
 /** PATCH /api/complaints/:id/status */
 router.patch("/:id/status", authenticate, authorize("warden", "admin"), async (req: AuthRequest, res: Response): Promise<void> => {
   const { status } = req.body;
-  const { id } = req.params;
+  const id = String(req.params.id);
   if (!["pending", "in-progress", "resolved", "closed"].includes(status)) {
     res.status(400).json({ error: "Invalid status" });
     return;

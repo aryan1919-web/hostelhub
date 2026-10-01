@@ -1,4 +1,5 @@
-import { Router, Request, Response } from "express";
+import { Router } from "express";
+import type { Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import { getDb, saveDb } from "../db/setup.js";
@@ -26,7 +27,7 @@ router.post("/login", async (req: Request, res: Response): Promise<void> => {
   const row = result[0].values[0];
   const cols = result[0].columns;
   const user: any = {};
-  cols.forEach((col, i) => user[col] = row[i]);
+  cols.forEach((col: string, i: number) => user[col] = row[i]);
 
   const isValidPassword = bcrypt.compareSync(password, user.password);
   if (!isValidPassword) {
@@ -95,7 +96,7 @@ router.get("/me", authenticate, async (req: AuthRequest, res: Response): Promise
   const row = result[0].values[0];
   const cols = result[0].columns;
   const user: any = {};
-  cols.forEach((col, i) => user[col] = row[i]);
+  cols.forEach((col: string, i: number) => user[col] = row[i]);
 
   res.json({
     id: user.id, name: user.name, email: user.email, role: user.role,

@@ -1,4 +1,5 @@
-import { Router, Response } from "express";
+import { Router } from "express";
+import type { Response } from "express";
 import { getDb, saveDb } from "../db/setup.js";
 import { authenticate, authorize, type AuthRequest } from "../middleware/auth.js";
 
@@ -49,7 +50,7 @@ router.post("/", authenticate, authorize("student"), async (req: AuthRequest, re
 /** PATCH /api/leaves/:id/approve */
 router.patch("/:id/approve", authenticate, authorize("warden", "admin"), async (req: AuthRequest, res: Response): Promise<void> => {
   const { status, remarks } = req.body;
-  const { id } = req.params;
+  const id = String(req.params.id);
   if (!["approved", "rejected"].includes(status)) {
     res.status(400).json({ error: "Status must be 'approved' or 'rejected'" });
     return;
